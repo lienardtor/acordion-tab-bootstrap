@@ -1,0 +1,134 @@
+<html lang="es">
+<html>
+<head>
+<!-- Permite caracteres Unicode en lenguaje español, incluyendo acentos y eñes-->
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/30c21ac8e0.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="form-css-local.css">	
+</head>
+<body>
+<div class="container">
+	<!-- Inicio de fila -->
+	<div class="row">
+		<div class="col-sm-12">
+			<!-- Puede colocar un enlace en el tag <a href="#"> -->
+			<p class="my-5"><a href="#"><img src="logo.png" alt="logo" width="100" height="100" class="img-fluid d-block mx-auto"/></a></p>
+		</div>
+	</div>
+	<!-- fin de fila -->
+	<!-- Inicio de fila -->
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="nav nav-tabs">
+				<li ><a data-toggle="tab" href="#tab1" aria-selected="true" class="active">Tab 1</a></li>
+				<li><a data-toggle="tab" href="#tab2" aria-selected="false">Tab 2</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- fin de fila -->
+	<!-- Inicio de fila -->
+	<div class="row">
+		<!-- Inicio de tabla-->
+		<div class="col-sm-12">
+			<!-- Inicio de tabs-->
+			<div class="tab-content">
+				<div id="tab1" class="tab-pane fade show active">
+					<div class="accordion">
+						<div class="card">
+							<div class="card-header" id="infraOne">
+								<!-- Sección de preguntas: reemplace el texto donde sea necesario-->
+								<a href="#collapseOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									<p class="mb-0">
+								  Pregunta 1? 
+									</p>
+								</a>
+							</div>
+							<div id="collapseOne" class="collapse" aria-labelledby="infraOne" data-parent="#accordion">
+								<div class="card-body">
+								<!-- Sección de respuestas: reemplace el texto donde sea necesario-->
+								  <p>Respuesta 1, tales como:</p>
+								<!-- crea una lista-->
+								  <ul>
+									<li>Opción 1.</li>
+									<li>Opción 2.</li>
+									<li>Opción 3.</li>
+									<li>Opción 4.</li>
+								  </ul>
+								</div>
+							</div>
+						</div><!-- fin de card-->
+						<div class="card">
+							<div class="card-header" id="infraTwo">
+								<a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								  <p class="mb-0">Pregunta 2?</p>
+								</a>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="infraTwo" data-parent="#accordion">
+								<div class="card-body">
+								Respuesta 2.
+								</div>
+							</div>
+						</div><!-- card-->
+						<div class="card">
+							<div class="card-header" id="infraThree">
+								<a href="#collapseThree" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<p class="mb-0">Pregunta 3?</p>
+								</a>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="infraThree" data-parent="#accordion">
+								<div class="card-body">
+								Respuesta 3.
+								</div>
+							</div>
+						</div><!-- fin de card-->
+					</div><!-- fin de acordion-->
+				</div><!-- fin tab 1-->
+			<div id="tab2" class="tab-pane fade">
+				<div class="accordion">
+					<div class="card">
+						<div class="card-header" id="aboutOne">
+							<a href="#collapseFour"   data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+								<p class="mb-0">Pregunta 4?</p>
+							</a>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="aboutOne" data-parent="#accordion">
+							<div class="card-body">
+							Respuesta 4. 
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="aboutTwo">
+							<a href="#collapseFive" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+							  <p class="mb-0">Pregunta 5?</p>
+							</a>
+						</div>
+						<div id="collapseFive" class="collapse" aria-labelledby="aboutTwo" data-parent="#accordion">
+							<div class="card-body">
+							Respuesta 5.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="aboutThree">
+							<a href="#collapseSix" class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+							  <p class="mb-0">Pregunta 6?</p>
+							</a>
+						</div>
+						<div id="collapseSix" class="collapse" aria-labelledby="aboutThree" data-parent="#accordion">
+							<div class="card-body">
+							Respuesta 6.
+							</div>
+						</div>
+					</div>
+				</div><!-- fin de acordion-->
+			</div><!-- fin tab2 -->
+		  </div><!-- fin tabs-->
+		</div><!-- fin de tabla-->
+	</div><!-- fin de fila -->
+</div>	<!-- fin de container -->
+</body>
+</html>
